@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.netfixtop{
+    border-bottom: 1px solid #ccc;
+}
+
+.netfix_img {
+    width:30%;
+    padding-left: 2rem;
+}
+
+.cardimg {
+    width: 10%;
+    padding-left: 2px;
+    padding-bottom: 1rem;
+}
+
+.headerpart {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding-bottom: 1.2rem;
+}
+
+.formholdbase {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.cardnum{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+
+.formbase {
+    /* border: 1px solid pink; */
+    width: 80%;
+}
+
+.formholder {
+    position: relative;
+}
+
+.labeling {
+    position: absolute;
+    left: 0;
+    padding-left: 1rem;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform :capitalize;
+    top: 1rem;
+    color:#9C9C9C;
+    transition: 0.5s;
+}
+
+.inputbox {
+    padding-bottom: 2rem;
+}
+
+.cardnum:valid ~ .labeling,.cardnum:focus ~ .labeling {
+    transform: translateX(10px) translateY(-12px);
+    font-size: 10px;
+}
+
+.expirydate {
+    width: 48%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+
+.cvvpart {
+    width: 48%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+
+.labeling1 {
+    position: absolute;
+    left: 0;
+    padding-left: 1rem;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform :capitalize;
+    top: 7rem;
+    color:#9C9C9C;
+    transition: 0.5s;
+}
+
+
+.expirydate:valid ~ .labeling1,.expirydate:focus ~ .labeling1 {
+    transform: translateX(10px) translateY(-12px);
+    font-size: 10px;
+}
+
+.cvvlabel {
+    position: absolute;
+    left: 13rem;
+    padding-left: 1rem;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform :uppercase;
+    color: #9C9C9C;
+    top: 7rem;
+    transition: 0.5s;
+}
+
+.cvvpart:valid ~ .cvvlabel,.cvvpart:focus ~ .cvvlabel {
+    transform: translateX(10px) translateY(-12px);
+    font-size: 10px;
+}
+
+.forinputexp {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+
+.firstname {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+
+.firstnam {
+    position: absolute;
+    left: 0;
+    padding-left: 1rem;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform :capitalize;
+    color: #9C9C9C;
+    top: 13rem;
+    transition: 0.5s;
+}
+
+.firstname:valid ~ .firstnam,.firstname:focus ~ .firstnam {
+    transform: translateX(10px) translateY(-12px);
+    font-size: 10px;
+}
+.lastname {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+
+.lastnam {
+    position: absolute;
+    left: 0;
+    padding-left: 1rem;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform :capitalize;
+    color:#9C9C9C;
+    top: 18.5rem;
+    transition: 0.5s;
+}
+
+.lastname:valid ~ .lastnam,.lastname:focus ~ .lastnam {
+    transform: translateX(10px) translateY(-12px);
+    font-size: 10px;
+}
+
+.billing {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+
+.billadd{
+    position: absolute;
+    left: 0;
+    padding-left: 1rem;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform :uppercase;
+    color:#9C9C9C;
+    top: 24rem;
+    transition: 0.5s;
+}
+
+.billing:valid ~ .billadd,.billing:focus ~ .billadd {
+    transform: translateX(10px) translateY(-12px);
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+.wrappedpriced {
+    background: #F4F4F4;
+    padding:1rem 0.5rem;
+    border-radius: 0.5rem;
+}
+.pricedmnt {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom:0.5rem;
+}
+
+.pricedmntz {
+    font-size: 20px;
+    color: #9C9C9C;
+}
+
+.lastpartinput {
+    padding-bottom: 1.6rem;
+}
+
+
+.wrappedstatemnt {
+    color: #807e7e;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    font-size: small;
+    padding-bottom: 1rem;
+}
+
+.blueticks {
+    color: blue;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+    background: #E50914;
+    color: #fff;
+    outline: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer{
+    background: #F3F3F3;
+    
+    }
+
+    .footer .container{
+        margin-left: 5rem;
+        /* margin-right: 25rem; */
+        padding-top: 2rem;
+        
+    }
+
+    .footerlist{
+        list-style: none;
+    }
+
+    .footer .question{
+        color:#737373;
+        padding-bottom: 1rem;
+    }
+
+    .footerlinks {
+        list-style: none;
+        display: grid;
+        grid-template: repeat(1, 100px)/ repeat(2,1fr);
+    }
+
+    .linkings{
+        /* padding-top: 1rem; */
+        font-size: small;
+        color: #737373;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 610px){
+        .cvvpart {
+            width: 48%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            padding-top: 20px;
+        }
+
+        .cvvlabel {
+            position: absolute;
+            left: 20rem;
+            padding-left: 1rem;
+            pointer-events: none;
+            font-size: 1em;
+            text-transform :uppercase;
+            color: #9C9C9C;
+            top: 7rem;
+            transition: 0.5s;
+        }
+    }
+
+
+@media screen and (min-width: 768px) {
+    .netfix_img {
+        width:15%;
+        padding-left: 2rem;
+    }
+
+    .cardimg {
+        width: 10%;
+        padding-left: 2px;
+    }
+
+    .formbase {
+        /* border: 1px solid pink; */
+        width: 28%;
+    }
+
+  .footer{
+    background: #F3F3F3;
+    
+    }
+
+    .footer .container{
+        margin-left: 5rem;
+        /* margin-right: 25rem; */
+        padding-top: 2rem;
+        
+    }
+
+    .footerlist{
+        list-style: none;
+    }
+
+    .footer .question{
+        color:#737373;
+    }
+
+    .footerlinks {
+        list-style: none;
+        display: grid;
+        grid-template: repeat(1, 100px)/ repeat(4,1fr);
+        margin-right: 10rem;
+    }
+
+    .linkings{
+        padding-top: 1rem;
+        font-size: small;
+        color: #737373;
+        text-transform: capitalize;
+    }
+    .cvvpart {
+        width: 48%;
+        padding: 1rem;
+        font-size: 1.1rem;
+        padding-top: 20px;
+    }
+
+    .cvvlabel {
+        position: absolute;
+        left: 20rem;
+        padding-left: 1rem;
+        pointer-events: none;
+        font-size: 1em;
+        text-transform :uppercase;
+        color: #9C9C9C;
+        top: 7rem;
+        transition: 0.5s;
+    }
+
+    
+}

